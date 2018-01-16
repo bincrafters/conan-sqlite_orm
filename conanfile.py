@@ -6,11 +6,12 @@ from conans import ConanFile, tools
 
 class sqlite_ormConan(ConanFile):
     name = "sqlite_orm"
-    version = "master"
+    version = "20180116"
     license = "MIT"
     exports = ["LICENSE"]
-    description = " The C++14 wrapper around sqlite library."
-    url = "https://github.com/AlexandrePTJ/conan-sqlite_modern_cpp"
+    description = "SQLite ORM light header only library for modern C++."
+    url = "https://github.com/AlexandrePTJ/conan-sqlite_orm"
+
 
     def source(self):
         base_url = "https://github.com/fnc12/sqlite_orm"
