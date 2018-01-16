@@ -9,6 +9,10 @@ class TestPackageConan(ConanFile):
     settings = "os", "compiler", "build_type", "arch"
     generators = "cmake"
 
+    requires = (
+        "sqlite3/[~=3]@bincrafters/stable"
+    )
+
     def build(self):
         cmake = CMake(self)
         cmake.configure()
