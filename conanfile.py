@@ -13,6 +13,10 @@ class sqlite_ormConan(ConanFile):
     description = "SQLite ORM light header only library for modern C++."
     url = "https://github.com/AlexandrePTJ/conan-sqlite_orm"
 
+    requires = (
+        "sqlite3/[~=3]@bincrafters/stable"
+    )
+
     # Custom attributes for Bincrafters recipe conventions
     source_subfolder = "source_subfolder"
 
