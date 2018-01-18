@@ -2,7 +2,7 @@
 
 | Bintray | Appveyor | Travis |
 |---------|-----------|--------|
-|BINTRAY_BADGE_URL|[![Build status](https://ci.appveyor.com/api/projects/status/lt5mg8ar5jat4t5t?svg=true)](https://ci.appveyor.com/project/AlexandrePTJ/conan-sqlite-orm)|[![Build Status](https://travis-ci.org/AlexandrePTJ/conan-sqlite_orm.svg?branch=master)](https://travis-ci.org/AlexandrePTJ/conan-sqlite_orm)|
+|BINTRAY_BADGE_URL|[![Build status](https://ci.appveyor.com/api/projects/status/lt5mg8ar5jat4t5t/branch/20180118%2Ftesting?svg=true)](https://ci.appveyor.com/project/AlexandrePTJ/conan-sqlite-orm/branch/20180118%2Ftesting)|[![Build Status](https://travis-ci.org/AlexandrePTJ/conan-sqlite_orm.svg?branch=20180118%2Ftesting)](https://travis-ci.org/AlexandrePTJ/conan-sqlite_orm)|
 
 ## Conan.io Information
 
@@ -39,9 +39,7 @@ The contents of this GIT repository are completely separate from the software be
     ~/.conan/data/<pkg_name>/<pkg_version>/bincrafters/package/<random_package_id>/license/<LICENSE_FILES_HERE>
 
 *Note :   The most common filenames for OSS licenses are `LICENSE` AND `COPYING` without file extensions.*
-	
+
 ### License for Bincrafters recipe:
 
     ~/.conan/data/<pkg_name>/<pkg_version>/bincrafters/export/LICENSE.md
-
-	
