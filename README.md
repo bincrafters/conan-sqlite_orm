@@ -2,7 +2,7 @@
 
 | Bintray | Appveyor | Travis |
 |---------|-----------|--------|
-|BINTRAY_BADGE_URL|APPVEYOR_BADGE_URL|TRAVIS_BADGE_URL|
+|BINTRAY_BADGE_URL|[![Build status](https://ci.appveyor.com/api/projects/status/lt5mg8ar5jat4t5t?svg=true)](https://ci.appveyor.com/project/AlexandrePTJ/conan-sqlite-orm)|[![Build Status](https://travis-ci.org/AlexandrePTJ/conan-sqlite_orm.svg?branch=master)](https://travis-ci.org/AlexandrePTJ/conan-sqlite_orm)|
 
 ## Conan.io Information
 
