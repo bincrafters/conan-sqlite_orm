@@ -9,10 +9,12 @@ class sqlite_ormConan(ConanFile):
     name = "sqlite_orm"
     version = "20180118"
     commit_id = "8c2dc3ae937c31b715c49f0d9dae109f92af1661"
+    url = "https://github.com/AlexandrePTJ/conan-sqlite_orm"
+    author = "AlexandrePTJ <alpetitjean@gmail.com>"
+    description = "SQLite ORM light header only library for modern C++."
+    no_copy_source = True
     license = "MIT"
     exports = ["LICENSE"]
-    description = "SQLite ORM light header only library for modern C++."
-    url = "https://github.com/AlexandrePTJ/conan-sqlite_orm"
 
     requires = (
         "sqlite3/[~=3]@bincrafters/stable"
