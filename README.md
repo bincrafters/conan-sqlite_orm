@@ -2,7 +2,7 @@
 
 | Bintray | Appveyor | Travis |
 |---------|-----------|--------|
-|[![Download](https://api.bintray.com/packages/alexandreptj/public-conan/sqlite_orm%3Aalexandreptj/images/download.svg) ](https://bintray.com/alexandreptj/public-conan/sqlite_orm%3Aalexandreptj/_latestVersion)|[![Build status](https://ci.appveyor.com/api/projects/status/lt5mg8ar5jat4t5t/branch/testing%2F20180118?svg=true)](https://ci.appveyor.com/project/AlexandrePTJ/conan-sqlite-orm/branch/testing%2F20180118)|[![Build Status](https://travis-ci.org/AlexandrePTJ/conan-sqlite_orm.svg?branch=testing%2F20180118)](https://travis-ci.org/AlexandrePTJ/conan-sqlite_orm)|
+|[![Download](https://api.bintray.com/packages/bincrafters/public-conan/sqlite_orm%3Abincrafters/images/download.svg) ](https://bintray.com/bincrafters/public-conan/sqlite_orm%3Abincrafters/_latestVersion)|[![Build status](https://ci.appveyor.com/api/projects/status/github/bincrafters/conan-sqlite_orm?svg=true)](https://ci.appveyor.com/project/BinCrafters/conan-sqlite_orm)|[![Build Status](https://travis-ci.org/bincrafters/conan-sqlite_orm.svg)](https://travis-ci.org/bincrafters/conan-sqlite_orm)|
 
 ## Conan.io Information
 
