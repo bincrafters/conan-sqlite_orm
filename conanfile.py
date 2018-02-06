@@ -10,11 +10,12 @@ class sqlite_ormConan(ConanFile):
     version = "20180118"
     commit_id = "8c2dc3ae937c31b715c49f0d9dae109f92af1661"
     url = "https://github.com/AlexandrePTJ/conan-sqlite_orm"
+    homepage = "https://github.com/fnc12/sqlite_orm"
     author = "AlexandrePTJ <alpetitjean@gmail.com>"
     description = "SQLite ORM light header only library for modern C++."
     no_copy_source = True
-    license = "MIT"
-    exports = ["LICENSE"]
+    license = "https://github.com/fnc12/sqlite_orm/blob/master/LICENSE"
+    exports = ["LICENSE.md"]
 
     requires = (
         "sqlite3/[~=3]@bincrafters/stable"
@@ -31,7 +32,7 @@ class sqlite_ormConan(ConanFile):
 
     def package(self):
         include_folder = os.path.join(self.source_subfolder, "include")
-        self.copy(pattern="LICENSE")
+        self.copy(pattern="LICENSE", dst="license", src=self.source_subfolder)
         self.copy(pattern="*", dst="include", src=include_folder)
 
     def package_id(self):
