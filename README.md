@@ -1,8 +1,8 @@
 ## Package Status
 
-| Bintray | Appveyor | Travis |
-|---------|-----------|--------|
-|[![Download](https://api.bintray.com/packages/bincrafters/public-conan/sqlite_orm%3Abincrafters/images/download.svg) ](https://bintray.com/bincrafters/public-conan/sqlite_orm%3Abincrafters/_latestVersion)|[![Build status](https://ci.appveyor.com/api/projects/status/github/bincrafters/conan-sqlite_orm?svg=true)](https://ci.appveyor.com/project/BinCrafters/conan-sqlite_orm)|[![Build Status](https://travis-ci.org/bincrafters/conan-sqlite_orm.svg)](https://travis-ci.org/bincrafters/conan-sqlite_orm)|
+| Bintray | Windows | Linux & macOS | 
+|:--------:|:---------:|:-----------------:|
+|[![Download](https://api.bintray.com/packages/bincrafters/public-conan/sqlite_orm%3Abincrafters/images/download.svg) ](https://bintray.com/bincrafters/public-conan/sqlite_orm%3Abincrafters/_latestVersion)|[![Build status](https://ci.appveyor.com/api/projects/status/github/bincrafters/conan-sqlite_orm?svg=true)](https://ci.appveyor.com/project/BinCrafters/conan-sqlite-orm)|[![Build Status](https://travis-ci.org/bincrafters/conan-sqlite_orm.svg)](https://travis-ci.org/bincrafters/conan-sqlite_orm)|
 
 ## Conan.io Information
 
