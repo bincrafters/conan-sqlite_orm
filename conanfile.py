@@ -7,8 +7,7 @@ import os
 
 class sqlite_ormConan(ConanFile):
     name = "sqlite_orm"
-    version = "20180118"
-    commit_id = "8c2dc3ae937c31b715c49f0d9dae109f92af1661"
+    version = "1.0"
     url = "https://github.com/bincrafters/conan-sqlite_orm"
     homepage = "https://github.com/fnc12/sqlite_orm"
     author = "AlexandrePTJ <alpetitjean@gmail.com>"
@@ -26,8 +25,8 @@ class sqlite_ormConan(ConanFile):
 
     def source(self):
         source_url = "https://github.com/fnc12/sqlite_orm"
-        tools.get("{0}/archive/{1}.tar.gz".format(source_url, self.commit_id))
-        extracted_dir = self.name + "-" + self.commit_id
+        tools.get("{0}/archive/v{1}.tar.gz".format(source_url, self.version))
+        extracted_dir = self.name + "-" + self.version
         os.rename(extracted_dir, self.source_subfolder)
 
     def package(self):
