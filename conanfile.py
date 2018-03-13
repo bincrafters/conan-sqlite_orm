@@ -8,19 +8,13 @@ import os
 class sqlite_ormConan(ConanFile):
     name = "sqlite_orm"
     version = "1.0"
+    description = "SQLite ORM light header only library for modern C++."
     url = "https://github.com/bincrafters/conan-sqlite_orm"
     homepage = "https://github.com/fnc12/sqlite_orm"
     author = "AlexandrePTJ <alpetitjean@gmail.com>"
-    description = "SQLite ORM light header only library for modern C++."
-    no_copy_source = True
-    license = "https://github.com/fnc12/sqlite_orm/blob/master/LICENSE"
+    license = "BSD 3-Clause"
     exports = ["LICENSE.md"]
-
-    requires = (
-        "sqlite3/[~=3]@bincrafters/stable"
-    )
-
-    # Custom attributes for Bincrafters recipe conventions
+    requires = "sqlite3/3.21.0@bincrafters/stable"
     source_subfolder = "source_subfolder"
 
     def source(self):
@@ -31,7 +25,7 @@ class sqlite_ormConan(ConanFile):
 
     def package(self):
         include_folder = os.path.join(self.source_subfolder, "include")
-        self.copy(pattern="LICENSE", dst="license", src=self.source_subfolder)
+        self.copy(pattern="LICENSE", dst="licenses", src=self.source_subfolder)
         self.copy(pattern="*", dst="include", src=include_folder)
 
     def package_id(self):
