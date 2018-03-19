@@ -16,6 +16,7 @@ class sqlite_ormConan(ConanFile):
     exports = ["LICENSE.md"]
     requires = "sqlite3/3.21.0@bincrafters/stable"
     source_subfolder = "source_subfolder"
+    no_copy_source = True
 
     def source(self):
         source_url = "https://github.com/fnc12/sqlite_orm"
