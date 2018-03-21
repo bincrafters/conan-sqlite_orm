@@ -7,7 +7,7 @@ import os
 
 class sqlite_ormConan(ConanFile):
     name = "sqlite_orm"
-    version = "1.0"
+    version = "1.1"
     description = "SQLite ORM light header only library for modern C++."
     url = "https://github.com/bincrafters/conan-sqlite_orm"
     homepage = "https://github.com/fnc12/sqlite_orm"
@@ -16,6 +16,7 @@ class sqlite_ormConan(ConanFile):
     exports = ["LICENSE.md"]
     requires = "sqlite3/3.21.0@bincrafters/stable"
     source_subfolder = "source_subfolder"
+    no_copy_source = True
 
     def source(self):
         source_url = "https://github.com/fnc12/sqlite_orm"
