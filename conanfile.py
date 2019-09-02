@@ -7,10 +7,11 @@ import os
 
 class sqlite_ormConan(ConanFile):
     name = "sqlite_orm"
-    version = "1.2"
+    version = "1.3"
     description = "SQLite ORM light header only library for modern C++."
     url = "https://github.com/bincrafters/conan-sqlite_orm"
     homepage = "https://github.com/fnc12/sqlite_orm"
+    topics = ("conan", "sqlite", "sql", "database", "orm", "sqlite_orm")
     author = "AlexandrePTJ <alpetitjean@gmail.com>"
     license = "BSD 3-Clause"
     exports = ["LICENSE.md"]
