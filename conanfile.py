@@ -15,18 +15,18 @@ class sqlite_ormConan(ConanFile):
     license = "BSD 3-Clause"
     exports = ["LICENSE.md"]
     requires = "sqlite3/3.21.0@bincrafters/stable"
-    source_subfolder = "source_subfolder"
+    _source_subfolder = "source_subfolder"
     no_copy_source = True
 
     def source(self):
         source_url = "https://github.com/fnc12/sqlite_orm"
         tools.get("{0}/archive/v{1}.tar.gz".format(source_url, self.version))
         extracted_dir = self.name + "-" + self.version
-        os.rename(extracted_dir, self.source_subfolder)
+        os.rename(extracted_dir, self._source_subfolder)
 
     def package(self):
-        include_folder = os.path.join(self.source_subfolder, "include")
-        self.copy(pattern="LICENSE", dst="licenses", src=self.source_subfolder)
+        include_folder = os.path.join(self._source_subfolder, "include")
+        self.copy(pattern="LICENSE", dst="licenses", src=self._source_subfolder)
         self.copy(pattern="*", dst="include", src=include_folder)
 
     def package_id(self):
