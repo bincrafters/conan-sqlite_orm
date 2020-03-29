@@ -11,7 +11,6 @@ class sqlite_ormConan(ConanFile):
     topics = ("conan", "sqlite", "sql", "database", "orm", "sqlite_orm")
     author = "AlexandrePTJ <alpetitjean@gmail.com>"
     license = "BSD 3-Clause"
-    exports = ["LICENSE.md"]
     requires = "sqlite3/3.21.0@bincrafters/stable"
     _source_subfolder = "source_subfolder"
     no_copy_source = True
